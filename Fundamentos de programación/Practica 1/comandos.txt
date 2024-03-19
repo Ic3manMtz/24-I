@@ -1,0 +1,13 @@
+  ls 	- Es una contracción de "List" se utiliza para listar los archivos y directorios
+ mkdir 	- Es una contracción de "Make Directory" se utiliza para crear un directorio nuevo
+  cd 	- Es el acrónimo de "Change Directory" se utiliza para cambiar de directorio
+  man 	- Proporciona documentación detallada sobre el comando
+  pwd	- Es el acrónimo de "Path Working Directory" se utiliza para mostrar la ruta en la que te encuentras
+  more	- Muestra el contenido de un archivo
+
+
+
+
+
+
+
