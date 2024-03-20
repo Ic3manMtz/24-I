@@ -16,7 +16,7 @@ public class Recursividad{
 			System.out.println("3) Buscar símbolos de una cadena en otra");
 			System.out.println("4) Invertir cadena");
 			System.out.println("5) Dibujar Hs");
-		      	System.out.println("6) Encontrar caminos");
+			System.out.println("6) Encontrar caminos");
 			System.out.println("7) Salir del programa");
 			opc = scanner.nextInt();
 			scanner.nextLine();
@@ -39,8 +39,7 @@ public class Recursividad{
 				System.out.println("\n\tEl producto es: " + resultado+"\n");
 				break;
 			case 2: System.out.println("\nEn esta sección se calcula en n-ésimo número de Xiomi");
-			       	int n=0;
-
+				int n=0;
 				System.out.print("\nIngrese el valor de n...");
 				n = scanner.nextInt();
 
@@ -78,13 +77,32 @@ public class Recursividad{
 
 				crearFractal(numeroFractal);
 				break;
-			case 6: System.out.println(" Encontrar caminos ");
+			case 6: System.out.println("\nEn esta seccción se encontrarán los caminos posibles entre un punto en el cuadrante positivo y el origen");
+				int coordenadaX, coordenadaY;
+
+				System.out.print("\nIngresa la coordenada x...");
+				coordenadaX = scanner.nextInt();
+				System.out.print("\nIngresa la coordenada y...");
+				coordenadaY = scanner.nextInt();
+
+				int numCaminos = numeroDeCaminos(coordenadaX, coordenadaY);
+
+				System.out.println("\n\tNumero de caminos  recursivo: "+numCaminos+"\n");
 				break;
 			case 7: return;
 			default:  System.out.println("\n\tOpción inválida, intente nuevamente\n");
 		}
 	}
 
+    public static int numeroDeCaminos(int x, int y) {
+        // Caso base: Si alguna de las coordenadas es 0 solo hay un camino al origen
+        if (x == 0 || y == 0) {
+            return 1;
+        }
+
+        //Sumamos los camninos de  ir hacia abajo o hacia la izquierda
+        return numeroDeCaminos(x-1, y) + numeroDeCaminos(x, y-1);
+    }
 
 	public static void crearFractal(int N){
 		dibujarH(N, 0.5, 0.5, 0.3);	
@@ -99,8 +117,8 @@ public class Recursividad{
 			return;
 		}
 		
-		double newLineSize=lineSize/(n-1);
-		dibujarH(n-1, x, y, lineSize);		
+		double newLineSize=lineSize/2.0;
+		dibujarH(n-1, x, y, lineSize);
 		dibujarH(n-1, x-lineSize, y+lineSize, newLineSize);
 		dibujarH(n-1, x-lineSize, y-lineSize, newLineSize);
 		dibujarH(n-1, x+lineSize, y-lineSize, newLineSize);
