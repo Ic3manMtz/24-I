@@ -43,6 +43,10 @@ public class Recursividad{
 				System.out.print("\nIngrese el valor de n...");
 				n = scanner.nextInt();
 
+				listaXiomi.add(1);
+				listaXiomi.add(1);
+				listaXiomi.add(1);
+
 				int enesimo = calcularXiomi(n);
 				System.out.println("\n\tEl número n-ésimo es "+enesimo+"\n");
 				break;
@@ -87,7 +91,7 @@ public class Recursividad{
 
 				int numCaminos = numeroDeCaminos(coordenadaX, coordenadaY);
 
-				System.out.println("\n\tNumero de caminos  recursivo: "+numCaminos+"\n");
+				System.out.println("\n\tNumero de caminos recursivo: "+numCaminos+"\n");
 				break;
 			case 7: return;
 			default:  System.out.println("\n\tOpción inválida, intente nuevamente\n");
@@ -110,15 +114,16 @@ public class Recursividad{
 
 	public static void dibujarH(int n, double x, double y, double lineSize){
 		if(n==1){
-			StdDraw.setPenColor(StdDraw.BLACK);
 			StdDraw.line(x-lineSize, y, x+lineSize, y);
 			StdDraw.line(x-lineSize, y+lineSize, x-lineSize, y-lineSize);
 			StdDraw.line(x+lineSize, y+lineSize, x+lineSize, y-lineSize);
 			return;
 		}
 		
+		//El nuevo tamaño de línea de calcula independientemente del valor de n
 		double newLineSize=lineSize/2.0;
 		dibujarH(n-1, x, y, lineSize);
+		//Se mueve a los nuevos centros de las H, son las "esquinas" de la H actual
 		dibujarH(n-1, x-lineSize, y+lineSize, newLineSize);
 		dibujarH(n-1, x-lineSize, y-lineSize, newLineSize);
 		dibujarH(n-1, x+lineSize, y-lineSize, newLineSize);
