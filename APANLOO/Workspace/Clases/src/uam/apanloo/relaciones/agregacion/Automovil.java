@@ -3,12 +3,17 @@ package uam.apanloo.relaciones.agregacion;
 public class Automovil {
   private String serie;
   private String modelo;
+  private Marca marca;
   private int anio;
   private Motor motor;
 
-  public Automovil(String serie, String modelo, int anio, Motor motor) {
+  public Automovil() {
+  }
+
+  public Automovil(String serie, String modelo, Marca marca, int anio, Motor motor) {
     this.serie = serie;
     this.modelo = modelo;
+    this.marca = marca;
     this.anio = anio;
     this.motor = motor;
   }
@@ -47,6 +52,7 @@ public class Automovil {
 
   @Override
   public String toString() {
-    return "Automovil [serie=" + serie + ", modelo=" + modelo + ", anio=" + anio + ", datos del motor=" + motor + "]";
+    return "Automovil [serie=" + serie + ", modelo=" + modelo + ", marca=" + marca + ", anio=" + anio + ", motor="
+        + motor + "]";
   }
 }
