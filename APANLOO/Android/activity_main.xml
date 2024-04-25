@@ -1,0 +1,353 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#17202A"
+    >
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/primeraGuiaVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/segundaGuiaVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terceraGuiaVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/primeraGuiaHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/segundaGuiaHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terceraGuiaHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cuartaGuiaHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/quintaGuiaHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+
+    <EditText
+        android:id="@+id/resultEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="40sp"
+        android:background="#D0D3D4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/primeraGuiaHorizontal"
+        />
+
+    <!-- Los botones primer renglon  -->
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="AC"
+        app:layout_constraintBottom_toTopOf="@+id/segundaGuiaHorizontal"
+        app:layout_constraintEnd_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultEditText" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="()"
+        app:layout_constraintStart_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@id/resultEditText"
+        app:layout_constraintBottom_toTopOf="@+id/segundaGuiaHorizontal"
+
+
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="%"
+        app:layout_constraintStart_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@id/resultEditText"
+        app:layout_constraintBottom_toTopOf="@+id/segundaGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="/"
+        app:layout_constraintStart_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultEditText"
+        app:layout_constraintBottom_toTopOf="@+id/segundaGuiaHorizontal"
+
+        />
+
+    <!-- Los botones del segundo renglon  -->
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/terceraGuiaHorizontal"
+        app:layout_constraintEnd_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="8"
+        app:layout_constraintStart_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/terceraGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="9"
+        app:layout_constraintStart_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/terceraGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="X"
+        app:layout_constraintStart_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/terceraGuiaHorizontal"
+
+        />
+
+    <!-- Los botones del tercer renglon  -->
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/cuartaGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="5"
+        app:layout_constraintStart_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/cuartaGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="6"
+        app:layout_constraintStart_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/cuartaGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintBottom_toTopOf="@+id/cuartaGuiaHorizontal"
+
+        />
+
+    <!-- Los botones del cuarto renglon  -->
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/quintaGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="2"
+        app:layout_constraintStart_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        app:layout_constraintBottom_toTopOf="@+id/quintaGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="3"
+        app:layout_constraintStart_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintBottom_toTopOf="@+id/quintaGuiaHorizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        app:layout_constraintBottom_toTopOf="@+id/quintaGuiaHorizontal"
+
+        />
+
+    <!-- Los botones del quinto renglon  -->
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button13"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="."
+        app:layout_constraintStart_toStartOf="@+id/primeraGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button14"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#414040"
+        android:text="D"
+        app:layout_constraintStart_toStartOf="@+id/segundaGuiaVertical"
+        app:layout_constraintEnd_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintTop_toBottomOf="@+id/button15"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="="
+        app:layout_constraintStart_toStartOf="@+id/terceraGuiaVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
