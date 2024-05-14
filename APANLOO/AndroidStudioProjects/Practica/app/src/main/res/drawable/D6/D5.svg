@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="41.064999mm"
+   height="41.064999mm"
+   viewBox="0 0 41.064999 41.064999"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-9.4675,-9.4674997)">
+    <path
+       style="fill:none;fill-opacity:0.996078;stroke:#000000;stroke-width:1.065;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-opacity:0.996078"
+       d="M 10,9.9999997 H 50 V 49.999997 H 10 Z"
+       id="path1" />
+    <circle
+       style="fill:#000000;fill-opacity:0.996078;stroke:#000000;stroke-width:0.590694;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-opacity:0.996078"
+       id="path2"
+       cx="20.043169"
+       cy="42.00824"
+       r="4.7046528" />
+    <circle
+       style="fill:#000000;fill-opacity:0.996078;stroke:#000000;stroke-width:0.590694;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-opacity:0.996078"
+       id="path2-8"
+       cx="19.999914"
+       cy="17.9639"
+       r="4.7046528" />
+    <circle
+       style="fill:#000000;fill-opacity:0.996078;stroke:#000000;stroke-width:0.590694;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-opacity:0.996078"
+       id="path2-6"
+       cx="39.950562"
+       cy="41.981899"
+       r="4.7046528" />
+    <circle
+       style="fill:#000000;fill-opacity:0.996078;stroke:#000000;stroke-width:0.590694;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-opacity:0.996078"
+       id="path2-9"
+       cx="39.922878"
+       cy="18.043476"
+       r="4.7046528" />
+    <circle
+       style="fill:#000000;fill-opacity:0.996078;stroke:#000000;stroke-width:0.590694;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-opacity:0.996078"
+       id="path2-69"
+       cx="30.088211"
+       cy="30.066116"
+       r="4.7046528" />
+  </g>
+</svg>
